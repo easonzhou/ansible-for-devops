@@ -43,7 +43,7 @@ If you would like to build the infrastructure locally, you will also need to ins
 To build the VMs and configure them using Ansible, follow these steps (both from within this directory):
 
   1. Run `vagrant up`.
-  2. Run `ansible-playbook configure.yml -i inventories/vagrant/`.
+  2. Run `ansible-playbook configure.yml -i inventories/vagrant/ -u vagrant --private-key="~/.vagrant.d/insecure_private_key" -vvvv`.
 
 This guide assumes you already have Vagrant, VirtualBox, and Ansible installed locally.
 
